@@ -1,3 +1,4 @@
+
 # Authors: Alexandre Gramfort <alexandre.gramfort@telecom-paristech.fr>
 #          Matti Hamalainen <msh@nmr.mgh.harvard.edu>
 #          Denis Engemann <denis.engemann@gmail.com>
@@ -1108,7 +1109,7 @@ def read_evokeds(fname, condition=None, baseline=None, kind='average',
         The evoked dataset(s).
     """
     check_fname(fname, 'evoked', ('-ave.fif', '-ave.fif.gz'))
-
+    print "oh"
     return_list = True
     if condition is None:
         evoked_node = _get_evoked_node(fname)
